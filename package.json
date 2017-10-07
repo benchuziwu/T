@@ -1,0 +1,22 @@
+{
+  "name": "chengmei",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/benchuziwu/chengmei.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/benchuziwu/chengmei/issues"
+  },
+  "homepage": "https://github.com/benchuziwu/chengmei#readme",
+  "devDependencies": {
+    "gulp-less": "^3.3.2"
+  }
+}

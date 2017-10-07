@@ -1,9 +1,9 @@
 @charset "utf-8";
-html{color:#000;background:#f5f5f5}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
+html{color:#000;background:#f5f5f5;overflow-x:hidden;}body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,textarea,p,blockquote,th,td{margin:0;padding:0}table{border-collapse:collapse;border-spacing:0}fieldset,img{border:0}address,caption,cite,code,dfn,em,strong,th,var{font-style:normal;font-weight:normal}ol,ul{list-style:none}caption,th{text-align:left}h1,h2,h3,h4,h5,h6{font-size:100%;font-weight:normal}q:before,q:after{content:''}abbr,acronym{border:0;font-variant:normal}sup{vertical-align:text-top}sub{vertical-align:text-bottom}input,textarea,select{font-family:inherit;font-size:inherit;font-weight:inherit;*font-size:100%}legend{color:#000}#yui3-css-stamp.cssreset{display:none}
 strong{font-weight:bold}
 /*common*/
 body{background:#fff}
-body{font-family:"Microsoft YaHei";font-size:14px;min-width:1200px}
+body{font-family:"Microsoft YaHei";font-size:14px;}
 *{outline:none}
 .clearfix{clear:both;width:100%;height:0}
 .fl{float:left}
@@ -24,7 +24,7 @@ a:hover{}
 .viewMore{-moz-transition:all 0.2s;-webkit-transition:all 0.2s;-o-transition:all 0.2s;transition:all 0.2s;margin:20px auto;width:90px;text-align:center;display:block;border:1px solid #1fac9c;padding:10px 24px;color:#1fac9c;-moz-border-radius:10px;-webkit-border-radius:10px;border-radius:30px}
 .viewMore:hover{background:#1fac9c;color:#fff}
 
-.mainW{width:1200px;margin:0 auto}
+.mainW{width:100%;margin:0 auto}
 .mainL{width:330px;float:left;margin-right:20px}
 .mainR{width:850px;float:left}
 
@@ -43,7 +43,7 @@ a:hover{}
 
 .navs{height:42px;line-height:42px;background:#1fac9c;position:relative;z-index:1;border-bottom:3px solid #ff8d40}
 .navs a{color:#fff}
-.navs .nLi{float:left;position:relative;display:inline;background:url("../../images/main_img/nav_line.png" ) no-repeat right center}
+/*.navs .nLi{float:left;position:relative;display:inline;background:url("../../images/main_img/nav_line.png" ) no-repeat right center}*/
 .navs .nLi h3{float:left}
 .navs .nLi h3 a{display:block;width:130px;font-size:16px;text-align:center}
 .navs .sub{display:none;width:130px;left:0;top:42px;position:absolute;background:#ff8d40;line-height:36px;padding:5px 0;text-align:center}
@@ -97,7 +97,7 @@ a:hover{}
 .iRecommend{background:#fff;padding:20px 0}
 .iRecommend .list{width:1340px;position:relative;margin-left:-70px;position:relative;overflow:hidden;zoom:1;margin:20px auto}
 .iRecommend .list .piclist{overflow:hidden;zoom:1}
-.iRecommend .list .ohbox{overflow:hidden;position:relative;width:1200px;margin-left:70px;height:284px}
+.iRecommend .list .ohbox{overflow:hidden;position:relative;width:100%;margin-left:70px;height:284px}
 .iRecommend .list .piclist li{float:left;position:relative;display:inline;width:200px;background:#fff;margin-right:20px;overflow:hidden;border:1px solid #eee;padding:11px;-moz-transition:all 0.3s ease;-webkit-transition:all 0.3s ease;-o-transition:all 0.3s ease;transition:all 0.3s ease}
 .iRecommend .list .piclist li:hover{border-color:#ff8d40}
 .iRecommend .list .piclist li img{width:200px;height:200px;-moz-transition:all 3s ease;-webkit-transition:all 3s ease;-o-transition:all 3s ease;transition:all 3s ease}
@@ -270,8 +270,6 @@ a:hover{}
 .productShow .info .tel{border:0px solid #EAE500;background:#fff;position:absolute;bottom:0;width:388px}
 .productShow .info .tel p{background:#1FAC9C;padding:0 10px;color:#fff}
 
-
-
 .slideTxtBox{margin-top:20px}
 .slideTxtBox .hd{height:40px;line-height:40px;padding:0 10px 0 20px;border-bottom:3px solid #ff8d40;position:relative;font-size:15px}
 .slideTxtBox .hd ul{width:684px;float:left;position:absolute;left:0px;height:40px;text-align:center}
@@ -281,25 +279,3 @@ a:hover{}
 .slideTxtBox .bd ul{zoom:1}
 .slideTxtBox .bd ul p{margin-bottom:15px;font-size:16px;line-height:28px}
 .slideTxtBox .bd ul img{max-width:100%}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
