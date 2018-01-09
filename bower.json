@@ -1,20 +1,23 @@
 {
-  "name": "chengmei",
+  "name": "exif-js",
+  "version": "2.3.0",
+  "homepage": "https://github.com/exif-js/exif-js",
   "authors": [
-    "chengyanxian <chengyanxian@ejtone.com>"
+    "Jacob Seidelin"
   ],
-  "description": "",
-  "main": "",
+  "description": "JavaScript library for reading EXIF image metadata",
+  "main": "exif.js",
+  "keywords": [
+    "exif"
+  ],
   "license": "MIT",
-  "homepage": "",
   "ignore": [
     "**/.*",
     "node_modules",
     "bower_components",
     "test",
-    "tests"
-  ],
-  "dependencies": {
-    "bootstrap": "^3.3.7"
-  }
+    "tests",
+    "spec",
+    "example"
+  ]
 }
