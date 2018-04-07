@@ -31,65 +31,12 @@
 .flex-direction-nav li a.flex-next{right:40px;background:url(../img/next_icon.png) center center no-repeat;}
 .flex-direction-nav li a:hover{filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity: 0.6; opacity: 0.6;}
 
-/*floor_1*/
-
-.clear{clear:both;}
-/*万能清除浮动开始*/
-.clearfix:after {
-    visibility: hidden;
-    display: block;
-    font-size: 0;
-    content: " ";
-    clear: both;
-    height: 0;
-}
-.clearfix { display: inline-table; } /* Hides from IE-mac */
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
 
 
 .w1200{width: 1200px;margin: 0 auto;}
 .w1100{ width:1100px; margin:0 auto;}
-.left{float: left;}
-.right{float: right;}
 .abs{ position: absolute;}
-/*head*/
-.head{font-family:"Microsoft YaHei","微软雅黑";background:#FFF;}
-.head .top{height: 36px;background: #000;color: #aaa;line-height: 36px;font-size: 12px;}
-.head .top a{color: #aaa;}
-.head .top .left{background: url(../images/icons_01.jpg) left center no-repeat;padding-left: 25px;}
-.head .top .right li{float: left;margin-right: 8px;}
-.head .top .right li.wxss{width: 100px;height: 36px;}
-.head .top .right li.wxss a{display:block;background: url(../images/icons_05.jpg) right center no-repeat;padding-right:28px;}
-.head .top #hishop_wx{position:relative;z-index: 999999;left:-100px;}
-.head .nav{height: 93px;}
-.head .nav .logo{height: 93px;}
-.head .nav .menu{position:relative;}
-.head .nav .menu ul li.imenu,.head .nav .menu ul li.imenu_on{float: left;}
-.head .nav .menu ul li a{display: block;line-height: 65px;color: #000;font-size: 16px;padding: 28px 20px 0;}
-.head .nav .menu ul .imenu:first-child a{color: #3e99ee;}
-.head .nav .menu ul .imenu:first-child a:hover{background: #FFF;}
-.submnu{width: 1200px;position:absolute;left:-400px;top:93px;z-index:6;display:none;background-color: rgba(0,0,0,0.7);/* IE9、标准浏览器、IE6和部分IE7内核的浏览器(如QQ浏览器)会读懂 */}
-@media \0screen\,screen\9 {/* 只支持IE6、7、8 */
-    .submnu{
-        background-color:#000000;
-        filter:Alpha(opacity=70);
-        /*position:static; IE6、7、8只能设置position:static(默认属性) ，否则会导致子元素继承Alpha值 */
-        *zoom:1; /* 激活IE6、7的haslayout属性，让它读懂Alpha */
-    }
-    .submnu div{
-        position: relative;/* 设置子元素为相对定位，可让子元素不继承Alpha值 */
-    }
-}
-.head .nav .menu .imenu a:hover{background: #3e99ee;color: #FFF;}
-.head .nav .menu .imenu_on{background: #3e99ee;}
-.head .nav .menu .imenu_on a{color: #FFF;}
-#pf{height: 160px;overflow: hidden;padding-left:100px;}
-.head .nav .menu .submnu .li_content{height: auto; overflow: hidden;float: left;width:16.6%;padding-top: 30px;}
-.head .nav .menu ul li.imenu_on .li_content li a{padding: 0 0 0 10px;line-height: 26px;font-size:14px;background: url(../images/icon8.jpg) left center no-repeat;}
-.head .nav .menu ul li.imenu_on .li_content li a:hover{color: #3ca6ff;}
-.head .nav .menu ul li.imenu_on .li_content li.title{padding-top:5px;padding-bottom:8px;}
-.head .nav .menu ul li.imenu_on .li_content li.title a{font-size: 18px;background: none;text-decoration:none;padding-left: 0px;font-weight: bold;}
+
 
 
 /*floor_1*/
