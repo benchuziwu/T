@@ -57,7 +57,7 @@ $(function () {
         $(".code_wrap").css("z-index", 50);
     });
 
-    var li = $('.nav ul .m');
+    var li = $('ul .m');
     li.eq(0).find('a').eq(0).hover(function () {
         $(this).html('HOME');
     }, function () {
