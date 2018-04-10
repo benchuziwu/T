@@ -1,94 +1,23 @@
-* {
-    margin: 0;
-    padding: 0;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-}
-
-input {
-    border: none;
-    outline: none;
-    font-family: "微软雅黑";
-    font-weight: 100;
-}
-
-img {
-    outline: none;
-    border: none;
-}
-
-body {
-    width: 100%;
-    min-width: 1200px;
-    font-family: "微软雅黑";
-}
-
-@charset "utf-8";
-/* 全局 2012.11.8*/
-body {
-    margin: 0;
-    padding: 0 0 12px 0;
-    font-size: 12px;
-    color: #383836;
-    line-height: 1.8;
-    font-family: "Microsoft YaHei", "微软雅黑", "宋体";
-}
-
-form, ul, li, ol, li, dl, dt, dd, img, p, h1, h2, h3, h4, h5, h6, input {
-    margin: 0;
-    padding: 0;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-size: 12px;
-}
-
-input, select {
-    font-size: 12px;
-}
-
-img {
-    border: 0;
-}
-
-ul, li {
-    list-style-type: none;
-}
-
-strong {
-    font-weight: normal;
-}
-
-em {
-    font-style: normal;
-}
-
-b {
-    line-height: 1.8;
-}
-
-h1, h2, h3, h4, h5, h6 {
-    font-weight: normal;
-}
-
-/* Link 全局链接样式 2009.7.28 */
-a {
-    color: #393939;
-    text-decoration: none;
-    cursor: pointer;
-}
-
-a:hover {
-    color: #3ca6ff;
-    text-decoration: none;
-}
-
+*{margin: 0px;padding: 0px;font-family:"微软雅黑";}
+body{min-width:1200px;font-size: 12px;overflow-x:hidden;}
+table,td,tr,ul,ol,li,dl,dd,dt,p,input,form,em,p,img,h1,h2,h3,h4,h5{margin:0px;padding:0px;}
+h1{color:#232323;}
+div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,p,span{font-size:12px;}
+p{color:#686868;}
+ul{list-style:none;}
+.cursor{cursor:pointer;}
+.clear{font-size:0;line-height:0;height:0;clear:both;visibility:hidden;overflow:hidden}
+.clearfix:after{content:".";display:block;height:0;clear:both;visibility:hidden;}
+.l{float:left;}
+.r{float:right;}
+.tl{text-align:left;}
+.tc{text-align:center;}
+.tr{text-align:right;}
+img {border:0;}
+a{text-decoration:none;color:#686868; cursor: pointer;}
+.gy{width:1200px;margin:0 auto;overflow:hidden;}
+a:hover{text-decoration:none;color:#f3782a;}
+img {outline: none;border: none; }
 .color_6e, .color_6e a {
     color: #6E6E6E;
 }
