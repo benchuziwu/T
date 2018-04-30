@@ -1,14 +1,12 @@
 function nTabs(thisObj, Num) {
-    console.log(11);
-    if (thisObj.className == "active")return;
     var tabObj = thisObj.parentNode.id;
     var tabList = document.getElementById(tabObj).getElementsByTagName("li");
     for (i = 0; i < tabList.length; i++) {
         if (i == Num) {
-            thisObj.className = "on";
+            thisObj.classList.add("on");
             document.getElementById(tabObj + "_Content" + i).style.display = "block";
         } else {
-            tabList[i].className = "";
+            tabList[i].classList.remove("on");
             document.getElementById(tabObj + "_Content" + i).style.display = "none";
         }
     }
@@ -112,29 +110,19 @@ $(function () {
         function () {
             $(this).children().stop(false, true);
             $(this).children(".serBoxOn").fadeIn();
-            $(this).children(".pic1").animate({right: -205}, 400);
-            $(this).children(".pic2").animate({left: 28}, 400);
-            $(this).children(".txt1").animate({left: -261}, 400);
-            $(this).children(".txt2").animate({right: 0}, 400);
+          //  $(this).children(".pic1").animate({right: -205}, 400);
+          //  $(this).children(".pic2").animate({left: 28}, 400);
+
         },
         function () {
             $(this).children().stop(false, true);
             $(this).children(".serBoxOn").fadeOut();
-            $(this).children(".pic1").animate({right: 28}, 400);
-            $(this).children(".pic2").animate({left: -205}, 400);
-            $(this).children(".txt1").animate({left: 0}, 400);
-            $(this).children(".txt2").animate({right: -261}, 400);
         }
     );
 
     var newhtml, i, s;
     i = 0;
     s = 0;
-    $(".nTab .cont ul").each(function () {
-        var xs = parseInt($(this).children("li").css("margin-right").replace('px', ''));
-
-        $(this).width(($(this).children("li").width() + xs) * $(this).children("li").length)
-    });
     /*左移*/
 
     function shangfan() {

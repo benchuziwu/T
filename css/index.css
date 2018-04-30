@@ -72,31 +72,18 @@
 .flex-direction-nav li a.flex-prev{left:40px;background:url(../img/prev_icon.png) center center no-repeat;}
 .flex-direction-nav li a.flex-next{right:40px;background:url(../img/next_icon.png) center center no-repeat;}
 .flex-direction-nav li a:hover{filter:alpha(opacity=60); -moz-opacity:0.6; -khtml-opacity: 0.6; opacity: 0.6;}
-
-
-
-.w1200{width: 1200px;margin: 0 auto;}
-.w1100{ width:1100px; margin:0 auto;}
-.abs{ position: absolute;}
-
-
-
 /*floor_1*/
 .content .title{font-size: 38px;padding-left: 115px;text-align: center;padding-top: 60px;line-height: 40px;}
-.content .title a{float: right;display: block;
-    /*background: url(../images/icons_03.png) right center no-repeat;*/
-    margin-right: 50px;padding-right: 20px;font-size: 16px;margin-top: 15px;}
+.content .title a{float: right;display: block;margin-right: 50px;padding-right: 20px;font-size: 16px;margin-top: 15px;}
 .content .title a:hover{color: #393939;text-decoration: underline;}
 .content .title p{font-size: 14px;padding-right: 115px; color:#4e4e4e;}
 #n3  .title p{font-size: 14px;padding-right: 115px; color:#d1dcf2;}
 .floor_1{height: 659px; position:relative;}
-.floor_1 .menu{padding-left: 85px;padding-top: 25px;overflow: hidden;/*height: 56px;*/}
-.floor_1 .menu ul li{float: left;margin-right: 15px;text-align: center;}
-.floor_1 .menu ul li a{display: block;background: url(../img/btn_02.png) center top no-repeat;width: 183px;height: 47px;line-height: 47px;color: #FFF;font-size: 16px;}
+.floor_1 .menu ul li{text-align: center;}
+.floor_1 .menu ul li a{display: block;margin:10px;background: url(../img/btn_02.png) center top no-repeat;height: 47px;line-height: 47px;color: #FFF;font-size: 16px;}
 .floor_1 .menu ul li a:hover,.floor_1 .menu ul li.on a{background: url(../img/btn_02_2.png) center top no-repeat;height: 56px;}
-.floor_1 .cont{margin-top: 45px; height:323px;/*margin-left: 66px;*/ }
-.floor_1 .cont ul { position:absolute;}
-.floor_1 .cont ul li{float: left;width: 323px;height: 323px;overflow: hidden;/*background: url(../images/png_bg1.png) no-repeat;*/margin-right: 50px;}
+.floor_1 .cont{margin:45px;}
+.floor_1 .cont ul li dl{border:1px dotted #3e3d3d;border-radius:2px;margin:20px 10px;}
 
 .floor_1 .nTab .prev{background: url(../img/fl01_prev.png);width: 68px;height: 128px; position: absolute;left: 0px;top:360px; cursor: pointer;}
 .floor_1 .nTab .next{background: url(../img/fl01_next.png);width: 68px;height: 128px;position: absolute;right: 0px;top:360px;  cursor: pointer;}
