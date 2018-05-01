@@ -2,7 +2,7 @@
 body{min-width:1200px;font-size: 12px;overflow-x:hidden;}
 table,td,tr,ul,ol,li,dl,dd,dt,p,input,form,em,p,img,h1,h2,h3,h4,h5{margin:0px;padding:0px;}
 h1{color:#232323;}
-div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input,button,textarea,blockquote,p,span{font-size:12px;}
+div,dl,dt,dd,ul,ol,li,pre,code,form,fieldset,legend,input,button,textarea,blockquote,p,span{font-size:12px;}
 p{color:#686868;}
 ul{list-style:none;}
 .cursor{cursor:pointer;}
@@ -22,8 +22,6 @@ img {outline: none;border: none; }
     color: #6E6E6E;
 }
 
-.left{float: left;}
-.right{float: right;}
 /*公共底部样式*/
 .footer {
     width: 100%;
@@ -142,6 +140,4 @@ img {outline: none;border: none; }
     clear: both;
     height: 0;
 }
-.clearfix { display: inline-table; } /* Hides from IE-mac */
-* html .clearfix { height: 1%; }
-.clearfix { display: block; }
+

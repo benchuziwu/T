@@ -63,9 +63,9 @@ $(function () {
     });
 
     li.eq(1).find('a').eq(0).hover(function () {
-        $(this).html('WEBSITE');
+        $(this).html('NEWS');
     }, function () {
-        $(this).html('网站建设');
+        $(this).html('新闻动态');
     });
 
     li.eq(2).find('a').eq(0).hover(function () {
@@ -88,8 +88,10 @@ $(function () {
     var url = window.location.href.toLowerCase();
     if (url.indexOf("/index.html") > -1) {
         $(".aa1").attr("id", "sel");
-    } else if (url.indexOf("/news/") > -1 ) {
-        $(".aa5").attr("id", "sel");
+    } else if (url.indexOf("/news.html") > -1 ) {
+        $(".aa3").attr("id", "sel");
+    }else if (url.indexOf("/about.html") > -1 ) {
+        $(".aa8").attr("id", "sel");
     }
 
     //控制导航

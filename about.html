@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>关于我们</title>
+    <link rel="stylesheet" href="css/bootstrap.css">
+    <link rel="stylesheet" type="text/css" href="css/commonstyle.css"/>
+    <link rel="stylesheet" href="css/index.css">
+    <script type="text/javascript" src="js/jquery-3.1.1.min.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script src="http://api.map.baidu.com/api?v=2.0&ak=A1LU7iHS0avqQwPLAxbhKn0UYSQCuRVH"></script>
+    <script src="js/jquery.baiduMap.min.js"></script>
+    <script src="js/main.js"></script>
+    <style>
+        .box { width: 100%; height: 400px; margin: 40px 20px; }
+        #container3 { width: 80%;height:100%;}
+        .list { width: 20%; height: 100%; background: #eee; }
+        .title { font-size: 14px; font-weight: bold; color: #cc5522; }
+        .content { font-size: 13px; color: #333; margin-top: 6px; }
+    </style>
+</head>
+<body>
+<!--空白占位-->
+<div class="height85" ></div>
+<!--顶部导航栏-->
+<div class="top-head" id="headdiv">
+    <div class="top02">
+        <nav class="navbar navbar-default navbar-fixed-top top02_center" role="navigation" style="background-color:#fff;">
+            <div class="container-fluid">
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                        <span class="sr-only">切换导航</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    <a class="navbar-brand brandStyle logo" href="#">logo</a>
+                </div>
+                <div class="collapse navbar-collapse" id="myNavbar">
+                    <div class="menustyle">
+                        <ul class="nav navbar-nav">
+                            <li class="m"><a href="index.html" class="aa1 mmm">首页</a></li>
+                            <li class="m"><a href="news.html" class="aa3 mmm">新闻动态</a></li>
+                            <li class="m"><a href="#" class="aa6 mmm">产品服务</a></li>
+                            <li class="m"><a href="#" class="aa4 mmm">成功案例</a></li>
+                            <li class="m"><a href="about.html" class="aa8 mmm">关于我们</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </nav>
+    </div>
+</div>
+<!--地理位置展示-->
+<div class="box">
+    <div id="container3" class="container pull-left"></div>
+</div>
+
+<script type="text/javascript">
+        var points = [{
+            id:1,
+            lng: 116.46,
+            lat: 39.92,
+            title: "谈博士咨询科技有限公司",
+            content: ["地址：北京市朝阳区小关北里", "电话：010-67013036"]
+        }];
+        var map = new BaiduMap({
+            id: "container3",
+            level: 16, //  选填--地图级别--(默认15)
+            zoom: true, // 选填--是否启用鼠标滚轮缩放功能--(默认false)
+            type: ["地图", "卫星", "三维"], // 选填--显示地图类型--(默认不显示)
+            width: 320, // 选填--信息窗口width--(默认自动调整)
+            height: 70, // 选填--信息窗口height--(默认自动调整)
+            titleClass: "title",
+            contentClass: "content",
+            showPanorama: true, // 是否显示全景控件(默认false)
+            showMarkPanorama: true, // 是否显示标注点全景图(默认false)
+            showLabel: false, // 是否显示文本标注(默认false)
+            mapStyle: "normal", // 默认normal,可选dark,light
+            icon: { // 选填--自定义icon图标
+                url: "img/marker2.png",
+                width: 34,
+                height: 94
+            },
+            centerPoint: { // 中心点经纬度
+                lng: 116.46,
+                lat: 39.92,
+            },
+            index: 0, // 开启对应的信息窗口，默认-1不开启
+            animate: true, // 是否开启坠落动画，默认false
+            points: points, // 标注点--id(唯一标识)
+            callback: function(id) {
+                $(".list").find("li").eq(id - 1).addClass("active").siblings().removeClass("active");
+            }
+        });
+    </script>
+
+</body>
+</html>
