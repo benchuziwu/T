@@ -92,3 +92,143 @@
 .news .item .news_img{width:200px;}
 .news .item img{width:200px;height:auto;}
 .news .item .news_content{margin-left:240px;cursor:pointer;}
+
+
+
+.content1{background-color:rgba(223,255,255,0.15);margin:60px 40px;}
+.content1 .content1_box{padding:30px;box-shadow: 0px 3px 30px #cccccc;}
+.content1 .content1_box h2{text-align: center;margin-bottom:15px;}
+.content1 .content1_box p{text-align: center;margin-bottom:5px;}
+.content1 .content1_box button{position:relative;width:120px;border:1px solid #080808;margin:20px  auto 0px;}
+.content1 .content1_box button:hover{background-color:#ff8400;color: #ffffff;border:1px solid #ff8400;}
+
+
+
+
+.content2{margin:20px 200px;}
+.content2 .row .card{box-sizing:border-box;margin:10px 0px 15px 0px;padding:20px;border:1px solid #888888;}
+.content2 .row  .card1{height: 200px;}
+.content2 .row  .card2{height: 424px;overflow: hidden;}
+
+
+
+/* ============ TIMELINE ============= */
+
+.timelineContainer {border-left:2px solid #ccc;margin:20px auto;width:900px;}
+div.timelineToggle {float:right;margin-right:0;white-space:nowrap;}
+
+a.expandAll {
+    color:#ccc;
+    cursor:pointer;
+    background:#000;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    font-size:12px;
+    padding:3px 5px;
+}
+
+a.expandAll:hover {
+    color:#7DBADF;
+    cursor:pointer;
+}
+
+div.timelineMajor {
+    clear:left;
+    float:left;
+    margin:0 0 12px;
+    width:900px;
+}
+
+.timelineMajor h2 {
+    background:url(../img/timeline_century_tick.gif) left center no-repeat;
+    font-family:Palatino,"Times New Roman", Times, serif;
+    cursor: pointer;
+    font-size:3em;
+    font-weight:400;
+    margin:0 0 10px;
+    padding:4px 4px 4px 20px;
+}
+
+.timelineMajor h2 span {
+    background:#ccc;
+    -webkit-border-radius:4px;
+    -moz-border-radius:4px;
+    border-radius:4px;
+    color:#131313;
+    letter-spacing:.1em;
+    line-height:1.7em;
+    padding:3px 5px 1px;
+}
+
+dl.timelineMinor {
+    clear:left;
+    float:left;
+    margin:0 12px 0 0;
+    padding:4px 4px 4px 0;
+    position:relative;
+    width:880px;
+}
+
+.timelineMinor dt {
+    background:url(../img/timeline_decade_tick.gif) left center no-repeat;
+    clear:left;
+    font-size:1.6em;
+    list-style-type:none;
+    line-height:1.2em;
+    margin:0 0 12px;
+    padding:0 0 0 24px;
+    white-space:nowrap;
+}
+
+.timelineMinor dt a {
+    color:#999;
+    cursor:pointer;
+}
+
+.timelineMinor dt a.closed {
+    color:#999;
+    font-size:1em;
+    margin-left:0;
+}
+
+.timelineMinor dt a.open {
+    color:#7DBADF;
+}
+
+.timelineMinor dt a:hover {
+    color:#7DBADF;
+}
+
+.timelineMinor dd {
+    padding-left:24px;
+    width:100%;
+}
+
+.timelineMinor dd h3 {
+    clear:both;
+    float:left;
+    font-size:1.5em;
+    margin:0;
+    white-space:nowrap;
+}
+
+.timelineEvent p {
+    clear:left;
+    float:left;
+    line-height:1.5em;
+    margin:6px 0 10px;
+}
+
+.timelineEvent h4 {clear:left;float:left;font-size:1.4em;font-weight:400;margin:10px 0 0;padding:0 0 0 20px;}
+.timelineEvent blockquote {border-left:2px solid #ccc;clear:left;float:left;font-size:1.8em;margin-left:0;padding:0 30px;width:400px;}
+.timelineEvent blockquote .attribution{font-size:0.7em;text-align: right;}
+.timelineEvent div.media {float:right;padding:0 0 12px;width:300px;}
+.timelineEvent .media img {border:2px solid #000;margin:0;}
+.timelineEvent .media p {font-size:1.2em;margin:0;padding:0;}
+.timelineEvent .media a:link,.timelineEvent .media a:visited {color:#ab221b;}
+.timelineEvent .media a:hover {color:#7DBADF;}
+
+.content3{background-color: #f6f6f6;padding-top:30px;}
+.content3 .content3_box{margin:0 200px;}
+
